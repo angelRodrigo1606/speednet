@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!--
+        Globo + rayo del SVG 04-globe-bolt.
+        Escalado al 94% sobre el centro para que el glifo quede dentro de la
+        zona segura (66dp de diámetro) del icono adaptativo.
+    -->
+    <group
+        android:pivotX="256"
+        android:pivotY="256"
+        android:scaleX="0.94"
+        android:scaleY="0.94">
+
+        <!-- Globo -->
+        <path
+            android:pathData="M256,106 a150,150 0 1,1 0,300 a150,150 0 1,1 0,-300 z"
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="16"
+            android:strokeAlpha="0.95" />
+        <path
+            android:pathData="M188,256 a68,150 0 1,1 136,0 a68,150 0 1,1 -136,0 z"
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="12"
+            android:strokeAlpha="0.75" />
+        <path
+            android:pathData="M114.6,206 L397.4,206"
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="12"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.75" />
+        <path
+            android:pathData="M114.6,306 L397.4,306"
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="12"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.75" />
+
+        <!-- Rayo grande y centrado -->
+        <path
+            android:pathData="M274,134 L191,278 L246,278 L218,378 L321,232 L264,232 Z"
+            android:fillColor="#FDE047"
+            android:strokeColor="#047857"
+            android:strokeWidth="10"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

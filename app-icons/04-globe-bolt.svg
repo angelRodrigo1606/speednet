@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="globeTitle globeDesc">
+  <title id="globeTitle">Speednet — Globo y rayo</title>
+  <desc id="globeDesc">Globo terráqueo de red con un rayo central.</desc>
+
+  <defs>
+    <linearGradient id="globeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+    <clipPath id="globeClip">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#globeClip)">
+    <rect width="512" height="512" fill="url(#globeBg)"/>
+    <ellipse cx="180" cy="105" rx="230" ry="160" fill="#FFFFFF" opacity="0.09"/>
+  </g>
+
+  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"/>
+
+  <!-- globo -->
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#FFFFFF" stroke-width="16" opacity="0.95"/>
+  <ellipse cx="256" cy="256" rx="68" ry="150" fill="none" stroke="#FFFFFF" stroke-width="12" opacity="0.75"/>
+  <line x1="114.6" y1="206" x2="397.4" y2="206" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+  <line x1="114.6" y1="306" x2="397.4" y2="306" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- rayo (más grande y centrado en el globo) -->
+  <path d="M274 134 L191 278 L246 278 L218 378 L321 232 L264 232 Z"
+        fill="#FDE047" stroke="#047857" stroke-width="10" stroke-linejoin="round"/>
+</svg>

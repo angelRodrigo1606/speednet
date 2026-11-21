@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Degradado del icono (equivalente al SVG 04-globe-bolt). -->
+    <path android:pathData="M0,0h512v512H0z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="512"
+                android:endY="512"
+                android:startColor="#34D399"
+                android:endColor="#047857" />
+        </aapt:attr>
+    </path>
+
+    <!-- Brillo superior sutil. -->
+    <path
+        android:pathData="M-50,105 a230,160 0 1,0 460,0 a230,160 0 1,0 -460,0 z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.08" />
+</vector>

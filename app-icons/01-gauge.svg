@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="gaugeTitle gaugeDesc">
+  <title id="gaugeTitle">Speednet — Velocímetro</title>
+  <desc id="gaugeDesc">Arco de progreso tipo velocímetro con aguja y marcas.</desc>
+
+  <defs>
+    <linearGradient id="gaugeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <clipPath id="gaugeClip">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#gaugeClip)">
+    <rect width="512" height="512" fill="url(#gaugeBg)"/>
+    <ellipse cx="170" cy="105" rx="230" ry="160" fill="#FFFFFF" opacity="0.08"/>
+  </g>
+
+  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"/>
+
+  <!-- pista del arco -->
+  <path d="M150 362 A150 150 0 1 1 362 362" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="26" stroke-linecap="round"/>
+  <!-- progreso -->
+  <path d="M150 362 A150 150 0 1 1 392 192.6" fill="none" stroke="#FDE047" stroke-width="26" stroke-linecap="round"/>
+
+  <!-- marcas -->
+  <g stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="10" stroke-linecap="round">
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(-135 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(-90 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(-45 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(0 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(45 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(90 256 256)"/>
+    <line x1="256" y1="128" x2="256" y2="152" transform="rotate(135 256 256)"/>
+  </g>
+
+  <!-- aguja -->
+  <line x1="226" y1="289" x2="256" y2="256" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="12" stroke-linecap="round"/>
+  <line x1="256" y1="256" x2="330" y2="176" stroke="#FDE047" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="22" fill="#FDE047"/>
+  <circle cx="256" cy="256" r="9" fill="#1D4ED8"/>
+</svg>
